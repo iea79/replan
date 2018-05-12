@@ -8,7 +8,7 @@
 
 @import 'mixins/mixin';
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
+@import 'core/fonts';
 
 // Mixin for include fonts
 // @include font-face("ArialMT", fonts/CenturyGothic, normal, normal);
@@ -23,8 +23,45 @@
 @import 'core/breadcrumb';
 @import 'core/pagination';
 @import 'core/header';
+@import 'core/icons';
 
 
+.wrapper {
+	background: url('../img/first-bg.png') no-repeat top center;
+	background-size: 100%;
+}
+.header {
+	@extend %clear_a;
+	color: rgba(#fff, .6);
+	font-family: "Proxima Nova";
+	a {
+		color: #fff;
+	}
+	.container_center {}
+	&__left {
+		float: left;
+	}
+	&__logo {
 
+	}
+	&__sub {
+	}
+	&__right {
+		float: right;
+	}
+	&__call {
+		
+	}
+	&__phone {
+		
+	}
+	&__center {
+		
+	}
+}
+.icon-call {}
+.btn {}
+.btn__success {}
+.icon-mail-open {}
 
 

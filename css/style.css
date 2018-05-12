@@ -5,7 +5,6 @@
 //  Skype: ivanov_ea
 //  ==========================
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,900);
 .grid:after, .footer:after, .main__content:after, .header:after {
   content: '';
   display: table;
@@ -15,6 +14,223 @@
   content: '';
   display: table;
   clear: both; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom/Acrom-Medium.eot");
+  src: local("Acrom Medium"), local("Acrom-Medium"), url("../fonts/Acrom/Acrom-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom/Acrom-Medium.woff2") format("woff2"), url("../fonts/Acrom/Acrom-Medium.woff") format("woff"), url("../fonts/Acrom/Acrom-Medium.ttf") format("truetype"), url("../fonts/Acrom/Acrom-Medium.svg#Acrom-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom/Acrom-Regular.eot");
+  src: local("Acrom Regular"), local("Acrom-Regular"), url("../fonts/Acrom/Acrom-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom/Acrom-Regular.woff2") format("woff2"), url("../fonts/Acrom/Acrom-Regular.woff") format("woff"), url("../fonts/Acrom/Acrom-Regular.ttf") format("truetype"), url("../fonts/Acrom/Acrom-Regular.svg#Acrom-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Acrom';
+  src: url("../fonts/Acrom/Acrom-Bold.eot");
+  src: local("Acrom Bold"), local("Acrom-Bold"), url("../fonts/Acrom/Acrom-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Acrom/Acrom-Bold.woff2") format("woff2"), url("../fonts/Acrom/Acrom-Bold.woff") format("woff"), url("../fonts/Acrom/Acrom-Bold.ttf") format("truetype"), url("../fonts/Acrom/Acrom-Bold.svg#Acrom-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+  src: local("Museo Sans Cyrl 700"), local("MuseoSansCyrl-700"), url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.svg#MuseoSansCyrl-700") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 500';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-500.eot");
+  src: local("Museo Sans Cyrl 500"), local("MuseoSansCyrl-500"), url("../fonts/MuseoSans/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-500.ttf") format("truetype"), url("../fonts/MuseoSans/MuseoSansCyrl-500.svg#MuseoSansCyrl-500") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 900';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-900.eot");
+  src: local("Museo Sans Cyrl 900"), local("MuseoSansCyrl-900"), url("../fonts/MuseoSans/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-900.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-900.ttf") format("truetype"), url("../fonts/MuseoSans/MuseoSansCyrl-900.svg#MuseoSansCyrl-900") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 300';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+  src: local("Museo Sans Cyrl 300"), local("MuseoSansCyrl-300"), url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.svg#MuseoSansCyrl-300") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 100';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-100.eot");
+  src: local("Museo Sans Cyrl 100"), local("MuseoSansCyrl-100"), url("../fonts/MuseoSans/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSans/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-100.ttf") format("truetype"), url("../fonts/MuseoSans/MuseoSansCyrl-100.svg#MuseoSansCyrl-100") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova/ProximaNova-Black.eot");
+  src: local("Proxima Nova Black"), local("ProximaNova-Black"), url("../fonts/ProximaNova/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Black.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Black.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-Black.svg#ProximaNova-Black") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova/ProximaNova-BoldIt.eot");
+  src: local("Proxima Nova Bold Italic"), local("ProximaNova-BoldIt"), url("../fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-BoldIt.woff2") format("woff2"), url("../fonts/ProximaNova/ProximaNova-BoldIt.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-BoldIt.ttf") format("truetype"), url("../fonts/ProximaNova/ProximaNova-BoldIt.svg#ProximaNova-BoldIt") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-BlackItalic.eot");
+  src: local("SF Pro Display Black Italic"), local("SFProDisplay-BlackItalic"), url("../fonts/SFProDisplay/SFProDisplay-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-BlackItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-BlackItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-BlackItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-BlackItalic.svg#SFProDisplay-BlackItalic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-BoldItalic.eot");
+  src: local("SF Pro Display BoldItalic"), local("SFProDisplay-BoldItalic"), url("../fonts/SFProDisplay/SFProDisplay-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-BoldItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-BoldItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-BoldItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-BoldItalic.svg#SFProDisplay-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Thin.eot");
+  src: local("SF Pro Display Thin"), local("SFProDisplay-Thin"), url("../fonts/SFProDisplay/SFProDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Thin.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Thin.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Thin.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Thin.svg#SFProDisplay-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-HeavyItalic.eot");
+  src: local("SF Pro Display HeavyItalic"), local("SFProDisplay-HeavyItalic"), url("../fonts/SFProDisplay/SFProDisplay-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-HeavyItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-HeavyItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-HeavyItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-HeavyItalic.svg#SFProDisplay-HeavyItalic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Black.eot");
+  src: local("SF Pro Display Black"), local("SFProDisplay-Black"), url("../fonts/SFProDisplay/SFProDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Black.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Black.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Black.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Black.svg#SFProDisplay-Black") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Light.eot");
+  src: local("SF Pro Display Light"), local("SFProDisplay-Light"), url("../fonts/SFProDisplay/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Light.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Light.svg#SFProDisplay-Light") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-LightItalic.eot");
+  src: local("SF Pro Display LightItalic"), local("SFProDisplay-LightItalic"), url("../fonts/SFProDisplay/SFProDisplay-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-LightItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-LightItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-LightItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-LightItalic.svg#SFProDisplay-LightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-MediumItalic.eot");
+  src: local("SF Pro Display MediumItalic"), local("SFProDisplay-MediumItalic"), url("../fonts/SFProDisplay/SFProDisplay-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-MediumItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-MediumItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-MediumItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-MediumItalic.svg#SFProDisplay-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-ThinItalic.eot");
+  src: local("SF Pro Display ThinItalic"), local("SFProDisplay-ThinItalic"), url("../fonts/SFProDisplay/SFProDisplay-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-ThinItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-ThinItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-ThinItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-ThinItalic.svg#SFProDisplay-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Regular.eot");
+  src: local("SF Pro Display Regular"), local("SFProDisplay-Regular"), url("../fonts/SFProDisplay/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Regular.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Regular.svg#SFProDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-RegularItalic.eot");
+  src: local("SF Pro Display Regular Italic"), local("SFProDisplay-RegularItalic"), url("../fonts/SFProDisplay/SFProDisplay-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-RegularItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-RegularItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-RegularItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-RegularItalic.svg#SFProDisplay-RegularItalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-UltralightItalic.eot");
+  src: local("SF Pro Display UltralightItalic"), local("SFProDisplay-UltralightItalic"), url("../fonts/SFProDisplay/SFProDisplay-UltralightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-UltralightItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-UltralightItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-UltralightItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-UltralightItalic.svg#SFProDisplay-UltralightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-SemiboldItalic.eot");
+  src: local("SF Pro Display SemiboldItalic"), local("SFProDisplay-SemiboldItalic"), url("../fonts/SFProDisplay/SFProDisplay-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-SemiboldItalic.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-SemiboldItalic.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-SemiboldItalic.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-SemiboldItalic.svg#SFProDisplay-SemiboldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Semibold.eot");
+  src: local("SF Pro Display Semibold"), local("SFProDisplay-Semibold"), url("../fonts/SFProDisplay/SFProDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Semibold.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Semibold.svg#SFProDisplay-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Heavy.eot");
+  src: local("SF Pro Display Heavy"), local("SFProDisplay-Heavy"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.svg#SFProDisplay-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Medium.eot");
+  src: local("SF Pro Display Medium"), local("SFProDisplay-Medium"), url("../fonts/SFProDisplay/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Medium.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Medium.svg#SFProDisplay-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Ultralight.eot");
+  src: local("SF Pro Display Ultralight"), local("SFProDisplay-Ultralight"), url("../fonts/SFProDisplay/SFProDisplay-Ultralight.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Ultralight.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Ultralight.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Ultralight.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Ultralight.svg#SFProDisplay-Ultralight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Bold.eot");
+  src: local("SF Pro Display Bold"), local("SFProDisplay-Bold"), url("../fonts/SFProDisplay/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Bold.ttf") format("truetype"), url("../fonts/SFProDisplay/SFProDisplay-Bold.svg#SFProDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 /* Global variables */
 /* ======================================================================== */
@@ -56,7 +272,7 @@ body {
   margin: 0;
   font-size: 100%;
   font-family: "Open Sans";
-  color: #000;
+  color: #2b3a40;
   line-height: 1.2; }
 
 /**
@@ -444,6 +660,18 @@ textarea {
   -webkit-transition: all 0.3ss;
   -o-transition: all 0.3ss;
   transition: all 0.3ss; }
+  input:not([type]):hover,
+  input[type=text]:hover,
+  input[type=password]:hover,
+  input[type=email]:hover,
+  input[type=url]:hover,
+  input[type=search]:hover,
+  input[type=tel]:hover,
+  input[type=number]:hover,
+  input[type=datetime]:hover,
+  textarea:hover {
+    border: 1px solid #ddd;
+    background-color: #fff; }
   input:not([type]):focus,
   input[type=text]:focus,
   input[type=password]:focus,
@@ -454,52 +682,8 @@ textarea {
   input[type=number]:focus,
   input[type=datetime]:focus,
   textarea:focus {
-    border: 1px solid #bebebe;
-    background-color: #f6f6f6; }
-    input:not([type]):focus::-webkit-input-placeholder,
-    input[type=text]:focus::-webkit-input-placeholder,
-    input[type=password]:focus::-webkit-input-placeholder,
-    input[type=email]:focus::-webkit-input-placeholder,
-    input[type=url]:focus::-webkit-input-placeholder,
-    input[type=search]:focus::-webkit-input-placeholder,
-    input[type=tel]:focus::-webkit-input-placeholder,
-    input[type=number]:focus::-webkit-input-placeholder,
-    input[type=datetime]:focus::-webkit-input-placeholder,
-    textarea:focus::-webkit-input-placeholder {
-      color: red; }
-    input:not([type]):focus:-moz-placeholder,
-    input[type=text]:focus:-moz-placeholder,
-    input[type=password]:focus:-moz-placeholder,
-    input[type=email]:focus:-moz-placeholder,
-    input[type=url]:focus:-moz-placeholder,
-    input[type=search]:focus:-moz-placeholder,
-    input[type=tel]:focus:-moz-placeholder,
-    input[type=number]:focus:-moz-placeholder,
-    input[type=datetime]:focus:-moz-placeholder,
-    textarea:focus:-moz-placeholder {
-      color: red; }
-    input:not([type]):focus::-moz-placeholder,
-    input[type=text]:focus::-moz-placeholder,
-    input[type=password]:focus::-moz-placeholder,
-    input[type=email]:focus::-moz-placeholder,
-    input[type=url]:focus::-moz-placeholder,
-    input[type=search]:focus::-moz-placeholder,
-    input[type=tel]:focus::-moz-placeholder,
-    input[type=number]:focus::-moz-placeholder,
-    input[type=datetime]:focus::-moz-placeholder,
-    textarea:focus::-moz-placeholder {
-      color: red; }
-    input:not([type]):focus:-ms-input-placeholder,
-    input[type=text]:focus:-ms-input-placeholder,
-    input[type=password]:focus:-ms-input-placeholder,
-    input[type=email]:focus:-ms-input-placeholder,
-    input[type=url]:focus:-ms-input-placeholder,
-    input[type=search]:focus:-ms-input-placeholder,
-    input[type=tel]:focus:-ms-input-placeholder,
-    input[type=number]:focus:-ms-input-placeholder,
-    input[type=datetime]:focus:-ms-input-placeholder,
-    textarea:focus:-ms-input-placeholder {
-      color: red; }
+    border: 1px solid #ddd;
+    background-color: #fff; }
   input:not([type]).input_error,
   input[type=text].input_error,
   input[type=password].input_error,
@@ -632,7 +816,7 @@ input[type=checkbox]:disabled:indeterminate:before {
   color: #aaa; }
 
 .btn {
-  color: #000;
+  color: #2b3a40;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 300;
@@ -734,7 +918,7 @@ input[type=checkbox]:disabled:indeterminate:before {
       vertical-align: top;
       letter-spacing: normal;
       line-height: 1.2;
-      font-size: 16px; }
+      font-size: 1em; }
   html[data-browser*="flexible"] .grid {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -783,7 +967,7 @@ input[type=checkbox]:disabled:indeterminate:before {
     width: 50%; } }
 
 .wrapper {
-  font-size: 16px;
+  font-size: 1em;
   min-height: 100%;
   height: auto !important;
   height: 100%;
@@ -795,7 +979,7 @@ input[type=checkbox]:disabled:indeterminate:before {
   padding-bottom: auto; }
 
 .container_center {
-  max-width: 900px;
+  max-width: 1450px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto; }
@@ -868,17 +1052,104 @@ input[type=checkbox]:disabled:indeterminate:before {
 
 /* Header
  ----------------------------------------------------------------------------- */
-.header {
-  background-color: #ccc;
-  padding: 10px 0; }
-  .header__logo {
-    float: left;
-    width: 150px; }
-
 .stiky {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%; }
+
+@font-face {
+  font-family: 'replan';
+  src: url("../fonts/replan/replan.eot?yd1hph");
+  src: url("../fonts/replan/replan.eot?yd1hph#iefix") format("embedded-opentype"), url("../fonts/replan/replan.ttf?yd1hph") format("truetype"), url("../fonts/replan/replan.woff?yd1hph") format("woff"), url("../fonts/replan/replan.svg?yd1hph#replan") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'replan' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-angel-right:before {
+  content: "\e903"; }
+
+.icon-angel-left:before {
+  content: "\e904"; }
+
+.icon-phone:before {
+  content: "\e900"; }
+
+.icon-quest:before {
+  content: "\e901"; }
+
+.icon-angel-down:before {
+  content: "\e902"; }
+
+.icon-bug:before {
+  content: "\e905"; }
+
+.icon-building:before {
+  content: "\e906"; }
+
+.icon-call:before {
+  content: "\e907"; }
+
+.icon-caret-left:before {
+  content: "\e908"; }
+
+.icon-check:before {
+  content: "\e909"; }
+
+.icon-check-sm:before {
+  content: "\e90a"; }
+
+.icon-clock:before {
+  content: "\e90b"; }
+
+.icon-close:before {
+  content: "\e90c"; }
+
+.icon-mail:before {
+  content: "\e90d"; }
+
+.icon-mail-open:before {
+  content: "\e90e"; }
+
+.icon-marker:before {
+  content: "\e90f"; }
+
+.icon-phone-call:before {
+  content: "\e910"; }
+
+.icon-prix:before {
+  content: "\e911"; }
+
+.icon-tower:before {
+  content: "\e912"; }
+
+.icon-zoom:before {
+  content: "\e913"; }
+
+.wrapper {
+  background: url("../img/first-bg.png") no-repeat top center;
+  background-size: 100%; }
+
+.header {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Proxima Nova"; }
+  .header a {
+    color: #fff; }
+  .header__left {
+    float: left; }
+  .header__right {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
