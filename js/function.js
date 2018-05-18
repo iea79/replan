@@ -37,7 +37,7 @@ $(document).ready(function() {
 	// First screen full height
 	function setHeiHeight() {
 	    $('.full__height').css({
-	        minHeight: $(window).height() + 'px'
+	        height: $(window).height() + 'px'
 	    });
 	}
 	setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
@@ -50,13 +50,13 @@ $(document).ready(function() {
 	});
 
 	// Scroll to ID // Плавный скролл к элементу при нажатии на ссылку. В ссылке указываем ID элемента
-	// $('#main__menu a[href^="#"]').click( function(){ 
-	// 	var scroll_el = $(this).attr('href'); 
-	// 	if ($(scroll_el).length != 0) {
-	// 	$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
-	// 	}
-	// 	return false;
-	// });
+	$('[data-smoot-scroll]').click( function(){ 
+		var scroll_el = $(this).attr('href'); 
+		if ($(scroll_el).length != 0) {
+		$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+		}
+		return false;
+	});
 
 	// Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
     // $(document).ready(function(){
@@ -72,7 +72,149 @@ $(document).ready(function() {
     // });
    	// setGridMatch($('[data-grid-match] .grid__item'));
    	gridMatch();
+   	fontResize();
+
+    $('.js-tooltip').tooltipster({
+        contentCloning: true,
+        side: 'right',
+        trigger: 'hover'
+    });
+
+    $('.exampleSlider').slick({
+        dots: true,
+        nextArrow: '<div class="exampleSlider-next"><div class="exampleSlider-icon"></div></div>',
+        prevArrow: '<div class="exampleSlider-prev"><div class="exampleSlider-icon"></div></div>'
+    });
+
+    $('.faq__item').on('click', function(event) {
+        event.preventDefault();
+        var wrap = $(this);
+        var descr = wrap.find('.faq__descr');
+
+        if ($(this).hasClass('open')) {
+            wrap.removeClass('open');
+            descr.removeClass('active');
+        } else {        
+            $('.faq__item').removeClass('open');
+            $('.faq__descr').removeClass('active');
+            wrap.addClass('open');
+            descr.addClass('active');
+        }
+
+    });
+
+    // $('[type=tel]').inputmask({ showMaskOnHover: false, alias: "tel" });
+    $('[type=tel]').inputmask("+9(999)999 99 99",{ showMaskOnHover: false });
+
+    $('[data-fancybox]').on('click', function(event) {
+        event.preventDefault();
+        var img = $(this).attr('href');
+
+        $('#fansy .form').html('<img src="'+img+'" alt="" />');
+        $('#fansy').modal('show');
+    });
+
+    formSubmit();
+
+     $('.specialist__panes').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        adaptiveHeight: true,
+        draggable: false,
+        asNavFor: '.specialist__tabs',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                draggable: true
+            }
+        }]
+    });
+    $('.specialist__tabs').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.specialist__panes',
+        arrows: false,
+        dots: false,
+        centerMode: false,
+        vertical: true,
+        infinite: false,
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                centerMode: true,
+                vertical: false,
+                variableWidth: true
+            }
+        }]
+    });
+
 });
+
+function formSubmit() {
+    $("[type=submit]").on('click', function (e){ 
+        e.preventDefault();
+        var form = $(this).closest('.form');
+        var url = form.attr('action');
+        var form_data = form.serialize();
+        var field = form.find('[required]');
+        // console.log(form_data);
+
+        empty = 0;
+
+        field.each(function() {
+            if ($(this).val() == "") {
+                $(this).addClass('invalid');
+                // return false;
+                empty++;
+            } else {
+                $(this).removeClass('invalid');
+                $(this).addClass('valid');
+            }  
+        });
+
+        // console.log(empty);
+
+        if (empty > 0) {
+            return false;
+        } else {        
+            $.ajax({
+                url: url,
+                type: "POST",
+                dataType: "html",
+                data: form_data,
+                success: function (response) {
+                    // $('#success').modal('show');
+                    // console.log('success');
+                    // console.log(response);
+                    // console.log(data);
+                    document.location.href = "success.html";
+                },
+                error: function (response) {
+                    // $('#success').modal('show');
+                    // console.log('error');
+                    // console.log(response);
+                }
+            });
+        }
+
+    });
+
+    $('[name="policyConfirm"]').on('change', function(event) {
+        event.preventDefault();
+        var btn = $(this).closest('.form').find('.btn');
+        if ($(this).prop('checked')) {
+            btn.removeAttr('disabled');
+            // console.log('checked');
+        } else {
+            btn.attr('disabled', true);
+        }
+    });
+}
 
 $(window).resize(function(event) {
     var windowWidth = $(window).width();
@@ -86,6 +228,7 @@ $(window).resize(function(event) {
 function checkOnResize() {
    	// setGridMatch($('[data-grid-match] .grid__item'));
    	gridMatch();
+   	fontResize();
 }
 
 function gridMatch() {
@@ -94,17 +237,49 @@ function gridMatch() {
    	});
 }
 
-// function setGridMatch(columns) {
-// 	var tallestcolumn = 0;
-// 	columns.removeAttr('style');
-// 	columns.each( function() {
-// 		currentHeight = $(this).height();
-// 		if(currentHeight > tallestcolumn) {
-// 			tallestcolumn = currentHeight;
-// 		}
-// 	});
-// 	setTimeout(function() {
-// 		columns.css('minHeight', tallestcolumn);
-// 	}, 100);
-// }
+function fontResize() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 1920 && windowWidth >= 768) {
+    	var fontSize = windowWidth/19.05;
+    } else if (windowWidth < 768) {
+    	var fontSize = 50;
+    // } else if (windowWidth >= 1770) {
+    // 	var fontSize = 100;
+    }
+	$('body').css('fontSize', fontSize + '%');
+}
+
+// Видео для страницы how it works
+$(function () {
+    if ($(".youtube")) {
+        $(".youtube").each(function () {
+            // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
+            $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+
+            // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
+            $(this).append($('<img src="img/play.svg" alt="Play" class="video__play">'));
+
+        });
+
+        $('.video__play, .video__prev').on('click', function () {
+            // создаем iframe со включенной опцией autoplay
+            var videoId = $(this).closest('.youtube').attr('id');
+            var iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
+            if ($(this).data('params')) iframe_url += '&' + $(this).data('params');
+
+            // Высота и ширина iframe должны быть такими же, как и у родительского блока
+            var iframe = $('<iframe/>', {
+                'frameborder': '0',
+                'src': iframe_url,
+                'width': $(this).width(),
+                'height': $(this).innerHeight()
+            })
+
+            // Заменяем миниатюру HTML5 плеером с YouTube
+            $(this).closest('.video__wrapper').append(iframe);
+
+        });
+    }
+
+});
 

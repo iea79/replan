@@ -1,5 +1,7 @@
 $icomoon-font-path: "../fonts/replan" !default;
 
+$icon-fire: \e914;
+$icon-plus: \e915;
 $icon-angel-right: \e903;
 $icon-angel-left: \e904;
 $icon-phone: \e900;
@@ -51,6 +53,16 @@ $icon-zoom: \e913;
   @return unquote("\"") + $str + unquote("\"");
 }
 
+.icon-fire {
+  &:before {
+    content: unicode($icon-fire); 
+  }
+}
+.icon-plus {
+  &:before {
+    content: unicode($icon-plus); 
+  }
+}
 .icon-angel-right {
   &:before {
     content: unicode($icon-angel-right); 

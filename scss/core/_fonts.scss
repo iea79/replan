@@ -38,6 +38,19 @@
 }
 
 @font-face {
+    font-family: 'Acrom';
+    src: url('../fonts/Acrom/Acrom-ExtraBold.eot');
+    src: local('Acrom ExtraBold'), local('Acrom-ExtraBold'),
+        url('../fonts/Acrom/Acrom-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Acrom/Acrom-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Acrom/Acrom-ExtraBold.woff') format('woff'),
+        url('../fonts/Acrom/Acrom-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Acrom/Acrom-ExtraBold.svg#Acrom-ExtraBold') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Museo Sans Cyrl 700';
     src: url('../fonts/MuseoSans/MuseoSansCyrl-700.eot');
     src: local('Museo Sans Cyrl 700'), local('MuseoSansCyrl-700'),
@@ -114,6 +127,19 @@
         url('../fonts/ProximaNova/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
     font-weight: 300;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova/ProximaNova-LightIt.eot');
+    src: local('Proxima Nova Light It'), local('ProximaNova-LightIt'),
+        url('../fonts/ProximaNova/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova/ProximaNova-LightIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova/ProximaNova-LightIt.woff') format('woff'),
+        url('../fonts/ProximaNova/ProximaNova-LightIt.ttf') format('truetype'),
+        url('../fonts/ProximaNova/ProximaNova-LightIt.svg#ProximaNova-LightIt') format('svg');
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {

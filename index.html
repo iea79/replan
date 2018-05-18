@@ -2,16 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>New project</title>
+	<title>Replan Estate — Проектирование и согласование перепланировки нежилых помещений</title>
 	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Согласуем или узаконим перепланировку нежилого помещения за 2 месяца по фиксированной в договоре цене." />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
-
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
-	<script type="text/javascript" src="js/function.js"></script>
+	<!-- <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" /> -->
+	<link href="css/style.css?1.1" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -33,7 +30,7 @@
 				<i class="icon-call"></i>
 				<div class="header__call">
 					<a href="tel:8 (499) 653-56-71" class="header__phone">8 (499) 653-56-71</a>
-					<a href="#" class="btn btn__success">Перезвонить вам?</a>
+					<a href="#" class="btn btn__success" data-toggle="modal" data-target="#callback">Перезвонить вам?</a>
 				</div>
 			</div>
 			
@@ -49,11 +46,1626 @@
 	<!-- begin main__content -->
 	<main class="main__content">
 		
-		<div class="container_center">
+		<!-- begin firstScreen -->
+		<section id="firstScreen" class="firstScreen">
+			<div class="container_center">
+			
+				<h1 class="firstScreen__title">Согласуем или узаконим перепланировку нежилого помещения <span>за 2 месяца по фиксированной в договоре цене</span></h1>
+
+				<div class="firstScreen__clients">
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-1.png" alt="">
+					</div>
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-2.png" alt="">
+					</div>
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-3.png" alt="">
+					</div>
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-4.png" alt="">
+					</div>
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-5.png" alt="">
+					</div>
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-6.png" alt="">
+					</div>
+					<div class="firstScreen__clients_img">
+						<img src="img/cli-7.png" alt="">
+					</div>
+				</div>
+
+				<div class="firstScreen__sub"><b>Выполнили 382 проекта</b> за последний год для продуктовых и не продуктовых магазинов, офисов, ресторанов, банков, стоматологий, медицинских центров</div>
+				
+				<div class="firstScreen__action">
+					<a href="#fForm" class="btn btn__lg btn_img" data-smoot-scroll>
+						<img src="img/proekt-pereplanirovki.png">
+						<span>Рассчитать стоимость работы</span>
+					</a>
+				</div>
+
+				<form id="fForm" action="send.php" class="firstScreen__form form">
+					<input type="hidden" name="subject" value="форма - Получить расчет стоимости">
+					<a href="#fForm" class="icon-angel-down" data-smoot-scroll></a>
+					<img src="img/joornal.png" class="joornal">
+					<div class="firstScreen__formLeft">
+						<div class="form__legend">Рассчитаем точную стоимость и сроки прохождения <br>всех инстанций</div>
+						<div class="form__sub">заполните форму и мы свяжемся с вами <br>для уточнения деталей задачи</div>
+						<div class="form__row">
+							<div class="form__field form__icon">
+								<input required type="text" name="email" placeholder="Ваш E-mail">
+								<i class="icon-mail"></i>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__field form__icon">
+								<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+								<i class="icon-phone"></i>
+							</div>
+						</div>
+						<div class="form__row">
+							<button type="submit" class="btn btn__lg btn_img">
+								<img src="img/proekt-pereplanirovki.png">
+								<span>Получить расчет стоимости</span>
+							</button>
+						</div>
+						<div class="form__row">
+							<input type="checkbox" name="policyConfirm" checked>
+							<label>Я принимаю <b data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+						</div>
+					</div>
+					<div class="firstScreen__formRight">
+						<div class="tooltips">
+							Мы подготовим для вас коммерческое предложение с полной сметой, списком необходимых инстанций и примерами выполненных проектов в вашей сфере
+						</div>
+						<div class="tooltips tooltips_lg">
+							<img src="img/calc.png" class="calc">
+							<b>Рассчитаем точную стоимость</b> предстоящей задачи и расскажем, как будем ее выполнять
+						</div>
+					</div>
+				</form>
+				
+			</div>
+		</section>
+		<!-- end firstScreen -->
+
+		<!-- begin example -->
+		<section id="example" class="example">
+			<!-- <div class="container_center">
+			
+				<h2 class="section__title">Согласовываем <br>нежилые помещения «под ключ» <br>во всех 
+				инстанциях</h2>
+
+				<ul class="example__tabs">
+					<li class="example__tab active"><a href="#tab1" data-toggle="tab"><i class="icon-building"></i> <span>Отдельностоящее здание</span></a></li>
+					<li class="example__tab"><a href="#tab2" data-toggle="tab"><i class="icon-tower"></i> <span>Встроенное или пристроенное к жилому дому помещение</span></a></li>
+				</ul>
+				
+				<div class="example__panes">
+					<div class="example__pane active" id="tab1">
+
+						<div class="example__paneTop">
+							<img class="example__pane_img" src="img/otdelka.jpg">
+							<div class="example__point_wrap">
+								<div class="example__point js-tooltip" data-tooltip-content="#example1">
+									<i class="icon-plus example__point_ico"></i>
+									<i class="icon-fire example__point_ico example__point_icoHover"></i>
+								</div>
+								<div class="example__point js-tooltip" data-tooltip-content="#example2">
+									<i class="icon-plus example__point_ico"></i>
+									<i class="icon-fire example__point_ico example__point_icoHover"></i>
+								</div>
+								<div class="example__point js-tooltip" data-tooltip-content="#example3">
+									<i class="icon-plus example__point_ico"></i>
+									<i class="icon-fire example__point_ico example__point_icoHover"></i>
+								</div>
+								<div class="example__point js-tooltip" data-tooltip-content="#example4">
+									<i class="icon-plus example__point_ico"></i>
+									<i class="icon-fire example__point_ico example__point_icoHover"></i>
+								</div>
+								<div class="example__point js-tooltip" data-tooltip-content="#example5">
+									<i class="icon-plus example__point_ico"></i>
+									<i class="icon-fire example__point_ico example__point_icoHover"></i>
+								</div>
+							</div>
+							<div class="example__point_contentWrap">
+								<div id="example1" class="example__point_content">
+									<div class="tooltips__title">Пожарная инспекция</div>
+									Противопожарная система<br>
+									Пожарный шланг <br>
+									Огнетушитель
+								</div>
+								<div id="example2" class="example__point_content">
+									<div class="tooltips__title">Пожарная инспекция 2</div>
+									Противопожарная система<br>
+									Пожарный шланг <br>
+									Огнетушитель
+								</div>
+								<div id="example3" class="example__point_content">
+									<div class="tooltips__title">Пожарная инспекция 3</div>
+									Противопожарная система<br>
+									Пожарный шланг <br>
+									Огнетушитель
+								</div>
+								<div id="example4" class="example__point_content">
+									<div class="tooltips__title">Пожарная инспекция 4</div>
+									Противопожарная система<br>
+									Пожарный шланг <br>
+									Огнетушитель
+								</div>
+								<div id="example5" class="example__point_content">
+									<div class="tooltips__title">Пожарная инспекция 5</div>
+									Противопожарная система<br>
+									Пожарный шланг <br>
+									Огнетушитель
+								</div>
+							</div>
+						</div>
+
+						<div class="example__paneBottom">
+							<div class="example__paneBottom_wrap">
+								<div class="grid grid__5 example__grid">
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+									<div>
+										<div class="example__gridItem">
+											<i class="icon-check-sm"></i>
+											Инстанция
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="example__pane" id="tab2">
+						<div class="example__paneTop">
+							<img class="example__pane_img" src="img/otdelka.jpg">
+						</div>
+					</div>
+				</div>
+				
+			</div> -->
+
+			<!-- begin exampleSlider -->
+			<div class="exampleSlider__wrap">
+				<div class="container_center">
+			
+					<div class="exampleSlider">
+						<!-- slider item -->
+						<div class="exampleSlider__item">
+							<!-- begin exampleSlider__top -->
+							<div class="exampleSlider__top">
+								<div class="exampleSlider__title">Согласование перепланировки нового магазина «Пятерочка»</div>
+								<div class="exampleSlider__logo">
+									<img src="img/five-logo-2.png">
+								</div>
+							</div>
+							<!-- end exampleSlider__top -->
+							<!-- begin exampleSlider__bottom -->
+							<div class="exampleSlider__bottom">
+								<div class="exampleSlider__left">
+									<!-- begin exampleSlider__prev -->
+									<div class="grid grid__2 exampleSlider__prev">
+										<div>
+											<div class="exampleSlider__sub">До</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+										<div>
+											<div class="exampleSlider__sub">После</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+									</div>
+									<!-- end exampleSlider__prev -->
+									<!-- begin grid example__grid -->
+									<div class="grid grid__5 example__grid">
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+									</div>
+									<!-- end grid example__grid -->
+								</div>
+								<div class="exampleSlider__right">
+									<div class="exampleSlider__sub">Планировка</div>
+									<!-- begin exampleSlider__zoom -->
+									<a class="exampleSlider__zoom" data-fancybox="" href="img/slider-plan.jpg">
+										<img src="img/slider-plan.jpg">
+										<span class="icon-zoom"></span>
+									</a>
+									<!-- end exampleSlider__zoom -->
+									<!-- begin exampleSlider__rev -->
+									<div class="exampleSlider__rev">
+										<img src="img/slider-rev.png">
+										<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+									</div>
+									<!-- end exampleSlider__rev -->
+								</div>
+							</div>
+							<!-- end exampleSlider__bottom -->
+						</div>
+						<!-- slider item -->
+						<div class="exampleSlider__item">
+							<!-- begin exampleSlider__top -->
+							<div class="exampleSlider__top">
+								<div class="exampleSlider__title">Согласование перепланировки нового магазина «Пятерочка»</div>
+								<div class="exampleSlider__logo">
+									<img src="img/five-logo-2.png">
+								</div>
+							</div>
+							<!-- end exampleSlider__top -->
+							<!-- begin exampleSlider__bottom -->
+							<div class="exampleSlider__bottom">
+								<div class="exampleSlider__left">
+									<!-- begin exampleSlider__prev -->
+									<div class="grid grid__2 exampleSlider__prev">
+										<div>
+											<div class="exampleSlider__sub">До</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+										<div>
+											<div class="exampleSlider__sub">После</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+									</div>
+									<!-- end exampleSlider__prev -->
+									<!-- begin grid example__grid -->
+									<div class="grid grid__5 example__grid">
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+									</div>
+									<!-- end grid example__grid -->
+								</div>
+								<div class="exampleSlider__right">
+									<div class="exampleSlider__sub">Планировка</div>
+									<!-- begin exampleSlider__zoom -->
+									<a class="exampleSlider__zoom" data-fancybox="" href="img/slider-plan.jpg">
+										<img src="img/slider-plan.jpg">
+										<span class="icon-zoom"></span>
+									</a>
+									<!-- end exampleSlider__zoom -->
+									<!-- begin exampleSlider__rev -->
+									<div class="exampleSlider__rev">
+										<img src="img/slider-rev.png">
+										<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+									</div>
+									<!-- end exampleSlider__rev -->
+								</div>
+							</div>
+							<!-- end exampleSlider__bottom -->
+						</div>
+						<!-- slider item -->
+						<div class="exampleSlider__item">
+							<!-- begin exampleSlider__top -->
+							<div class="exampleSlider__top">
+								<div class="exampleSlider__title">Согласование перепланировки нового магазина «Пятерочка»</div>
+								<div class="exampleSlider__logo">
+									<img src="img/five-logo-2.png">
+								</div>
+							</div>
+							<!-- end exampleSlider__top -->
+							<!-- begin exampleSlider__bottom -->
+							<div class="exampleSlider__bottom">
+								<div class="exampleSlider__left">
+									<!-- begin exampleSlider__prev -->
+									<div class="grid grid__2 exampleSlider__prev">
+										<div>
+											<div class="exampleSlider__sub">До</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+										<div>
+											<div class="exampleSlider__sub">После</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+									</div>
+									<!-- end exampleSlider__prev -->
+									<!-- begin grid example__grid -->
+									<div class="grid grid__5 example__grid">
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+									</div>
+									<!-- end grid example__grid -->
+								</div>
+								<div class="exampleSlider__right">
+									<div class="exampleSlider__sub">Планировка</div>
+									<!-- begin exampleSlider__zoom -->
+									<a class="exampleSlider__zoom" data-fancybox="" href="img/slider-plan.jpg">
+										<img src="img/slider-plan.jpg">
+										<span class="icon-zoom"></span>
+									</a>
+									<!-- end exampleSlider__zoom -->
+									<!-- begin exampleSlider__rev -->
+									<div class="exampleSlider__rev">
+										<img src="img/slider-rev.png">
+										<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+									</div>
+									<!-- end exampleSlider__rev -->
+								</div>
+							</div>
+							<!-- end exampleSlider__bottom -->
+						</div>
+						<!-- slider item -->
+						<div class="exampleSlider__item">
+							<!-- begin exampleSlider__top -->
+							<div class="exampleSlider__top">
+								<div class="exampleSlider__title">Согласование перепланировки нового магазина «Пятерочка»</div>
+								<div class="exampleSlider__logo">
+									<img src="img/five-logo-2.png">
+								</div>
+							</div>
+							<!-- end exampleSlider__top -->
+							<!-- begin exampleSlider__bottom -->
+							<div class="exampleSlider__bottom">
+								<div class="exampleSlider__left">
+									<!-- begin exampleSlider__prev -->
+									<div class="grid grid__2 exampleSlider__prev">
+										<div>
+											<div class="exampleSlider__sub">До</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+										<div>
+											<div class="exampleSlider__sub">После</div>
+											<img src="img/slider-prev.jpg" alt="">
+										</div>
+									</div>
+									<!-- end exampleSlider__prev -->
+									<!-- begin grid example__grid -->
+									<div class="grid grid__5 example__grid">
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+										<div>
+											<div class="example__gridItem">
+												<i class="icon-check-sm"></i>
+												Инстанция
+											</div>
+										</div>
+									</div>
+									<!-- end grid example__grid -->
+								</div>
+								<div class="exampleSlider__right">
+									<div class="exampleSlider__sub">Планировка</div>
+									<!-- begin exampleSlider__zoom -->
+									<a class="exampleSlider__zoom" data-fancybox="" href="img/slider-plan.jpg">
+										<img src="img/slider-plan.jpg">
+										<span class="icon-zoom"></span>
+									</a>
+									<!-- end exampleSlider__zoom -->
+									<!-- begin exampleSlider__rev -->
+									<div class="exampleSlider__rev">
+										<img src="img/slider-rev.png">
+										<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+									</div>
+									<!-- end exampleSlider__rev -->
+								</div>
+							</div>
+							<!-- end exampleSlider__bottom -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- end exampleSlider -->
+
+		</section>
+		<!-- end example -->
+
+		<!-- begin free -->
+		<section id="free" class="free">
+			<div class="container_center">
+			
+				<div class="free__left">
+					<h2 class="section__title">Бесплатно приедем на ваш <br>объект и совместно проведем <br>детальный анализ и разработаем <br>стратегию согласования</h2>
+					<p>Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</p>
+				</div>
+
+				<div class="free__right">
+					<form action="send.php" class="free__form form">
+						<input type="hidden" name="subject" value="форма - вызвать специалиста на объект">
+						<div class="form__legend">Заполните форму</div>
+						<div class="form__sub">наш специалист свяжется с вами в течении <br>10 минут для уточнения адреса объекта</div>
+						<div class="form__row">
+							<div class="form__field form__icon">
+								<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+								<i class="icon-phone"></i>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__field form__icon">
+								<input required type="text" name="email" placeholder="Ваш E-mail">
+								<i class="icon-mail"></i>
+							</div>
+						</div>
+						<div class="form__row">
+							<button type="submit" class="btn btn__lg">
+								<span>вызвать специалиста на объект</span>
+							</button>
+						</div>
+						<div class="form__row">
+							<input type="checkbox" name="policyConfirm" checked>
+							<label>Я принимаю <b data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</section>
+		<!-- end free -->
+
+		<!-- begin help -->
+		<section id="help" class="help">
+			<div class="container_center">
+				
+				<div class="help__top">
+					<h2 class="section__title">Поможем успешно пройти все 34 инстанции,</h2>
+					<div class="section__sub">прохождение которых требуется законодательством <br>на сегодняшний день</div>
+				</div>
+
+				<!-- begin grid help__grid -->
+				<div class="grid help__grid">
+					<div>
+						<div class="help__img">
+							<img src="img/help1.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help2.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help3.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help4.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help5.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help6.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help7.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help8.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help9.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help10.png">
+						</div>
+					</div>
+					<div>
+						<div class="help__img">
+							<img src="img/help11.png">
+						</div>
+					</div>
+				</div>
+				<!-- end grid help__grid -->
+
+				<!-- begin help__form -->
+				<div class="help__form">
+				
+					<img src="img/book.png" class="book">
+
+					<form action="send.php" class="form">
+						<input type="hidden" name="subject" value="форма - Получить расчет">
+						<div class="form__legend">Рассчитаем точную стоимость согласования перепланировки на вашей объекте </div>
+						<div class="form__row">
+							<!-- begin grid -->
+							<div class="grid">
+								<div>
+									<div class="form__field form__icon">
+										<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+										<i class="icon-phone"></i>
+									</div>
+								</div>
+								<div>
+									<div class="form__field form__icon">
+										<input required type="text" name="email" placeholder="Ваш E-mail">
+										<i class="icon-mail"></i>
+									</div>
+								</div>
+								<div>
+									<div class="form__field form__icon">
+										<button type="submit" class="btn btn__lg"><span>Получить расчет</span></button>
+									</div>
+								</div>
+							</div>
+							<!-- end grid -->
+						</div>
+						<div class="form__row">
+							<input type="checkbox" name="policyConfirm" checked>
+							<label>Я принимаю <b data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+						</div>
+					</form>
+					
+				</div>
+				<!-- end help__form -->
+				
+			</div>
+		</section>
+		<!-- end help -->
+
+		<!-- begin manager -->
+		<section id="manager" class="manager">
+			<div class="container_center">
+			
+				<div class="manager__photo">
+					<img src="img/manager.png">
+				</div>
+
+				<div class="manager__right">
+					<h2 class="manager__name">Иванов Иван </h2>
+					<div class="manager__sub">руководитель </div>
+					<div class="manager__quote">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+					<div class="manager__signature">
+						<img src="img/signature.png">
+					</div>
+					<div class="manager__action">
+						<a href="#" class="btn btn__lg" data-toggle="modal" data-target="#executive"><span>Получить консультацию</span></a>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- end manager -->
+
+		<!-- begin specialist -->
+		<section id="specialist" class="specialist">
+			<div class="container_center">
+			
+				<h2 class="section__title">12 специалистов,</h2>
+				<div class="section__sub">каждый из которых — профессионал <br>в своей области</div>
+
+				<!-- begin Nav tabs specialist__tabs -->
+				<div class="specialist__tabs">
+					<div class="specialist__tab">
+						<span class="specialist__tab_img">
+							<span class="specialist__tab_circle">
+								<img src="img/specialist.png">
+							</span>
+						</span>
+						<span class="specialist__tab_right">
+							<span class="specialist__tab_name">Дмитрий</span>
+							<span class="specialist__tab_prof">проектировщик</span>
+						</span>
+					</div>
+					<div class="specialist__tab">
+						<span class="specialist__tab_img">
+							<span class="specialist__tab_circle">
+								<img src="img/specialist.png">
+							</span>
+						</span>
+						<span class="specialist__tab_right">
+							<span class="specialist__tab_name">Дмитрий</span>
+							<span class="specialist__tab_prof">проектировщик</span>
+						</span>
+					</div>
+					<div class="specialist__tab">
+						<span class="specialist__tab_img">
+							<span class="specialist__tab_circle">
+								<img src="img/specialist.png">
+							</span>
+						</span>
+						<span class="specialist__tab_right">
+							<span class="specialist__tab_name">Дмитрий</span>
+							<span class="specialist__tab_prof">проектировщик</span>
+						</span>
+					</div>
+					<div class="specialist__tab">
+						<span class="specialist__tab_img">
+							<span class="specialist__tab_circle">
+								<img src="img/specialist.png">
+							</span>
+						</span>
+						<span class="specialist__tab_right">
+							<span class="specialist__tab_name">Дмитрий</span>
+							<span class="specialist__tab_prof">проектировщик</span>
+						</span>
+					</div>
+					<div class="specialist__tab">
+						<span class="specialist__tab_img">
+							<span class="specialist__tab_circle">
+								<img src="img/specialist.png">
+							</span>
+						</span>
+						<span class="specialist__tab_right">
+							<span class="specialist__tab_name">Дмитрий</span>
+							<span class="specialist__tab_prof">проектировщик</span>
+						</span>
+					</div>
+				</div>
+				<!-- end Nav tabs specialist__tabs -->
+				
+				<!-- begin Tab panes specialist__panes -->
+				<div class="specialist__panes">
+					<div class="specialist__pane">
+						<div class="specialist__pane_wrap">
+							<div class="specialist__pane_photo">
+								<div class="specialist__pane_circle">
+									<img src="img/specialist.png">
+								</div>
+							</div>
+							<div class="specialist__pane_name">Дмитрий</div>
+							<div class="specialist__pane_prof">проектировщик</div>
+							<div class="specialist__pane_info">
+								<div class="specialist__pane_infoItem">
+									<i class="icon-bug"></i>
+									<b>320</b> 
+									выполненых проектов
+								</div>
+								<div class="specialist__pane_infoItem">
+									<i class="icon-prix"></i>
+									<b>8</b> 
+									лет опыта
+								</div>
+							</div>
+							<div class="specialist__pane_text">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+							<div class="specialist__pane_action">
+								<a class="btn btn__lg" data-toggle="modal" data-target="#consultant">
+									<span>Проконсультироваться с дмитрием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="specialist__pane">
+						<div class="specialist__pane_wrap">
+							<div class="specialist__pane_photo">
+								<div class="specialist__pane_circle">
+									<img src="img/specialist.png">
+								</div>
+							</div>
+							<div class="specialist__pane_name">Дмитрий</div>
+							<div class="specialist__pane_prof">проектировщик</div>
+							<div class="specialist__pane_info">
+								<div class="specialist__pane_infoItem">
+									<i class="icon-bug"></i>
+									<b>320</b> 
+									выполненых проектов
+								</div>
+								<div class="specialist__pane_infoItem">
+									<i class="icon-prix"></i>
+									<b>8</b> 
+									лет опыта
+								</div>
+							</div>
+							<div class="specialist__pane_text">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+							<div class="specialist__pane_action">
+								<a class="btn btn__lg" data-toggle="modal" data-target="#consultant">
+									<span>Проконсультироваться с дмитрием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="specialist__pane">
+						<div class="specialist__pane_wrap">
+							<div class="specialist__pane_photo">
+								<div class="specialist__pane_circle">
+									<img src="img/specialist.png">
+								</div>
+							</div>
+							<div class="specialist__pane_name">Дмитрий</div>
+							<div class="specialist__pane_prof">проектировщик</div>
+							<div class="specialist__pane_info">
+								<div class="specialist__pane_infoItem">
+									<i class="icon-bug"></i>
+									<b>320</b> 
+									выполненых проектов
+								</div>
+								<div class="specialist__pane_infoItem">
+									<i class="icon-prix"></i>
+									<b>8</b> 
+									лет опыта
+								</div>
+							</div>
+							<div class="specialist__pane_text">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+							<div class="specialist__pane_action">
+								<a class="btn btn__lg" data-toggle="modal" data-target="#consultant">
+									<span>Проконсультироваться с дмитрием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="specialist__pane">
+						<div class="specialist__pane_wrap">
+							<div class="specialist__pane_photo">
+								<div class="specialist__pane_circle">
+									<img src="img/specialist.png">
+								</div>
+							</div>
+							<div class="specialist__pane_name">Дмитрий</div>
+							<div class="specialist__pane_prof">проектировщик</div>
+							<div class="specialist__pane_info">
+								<div class="specialist__pane_infoItem">
+									<i class="icon-bug"></i>
+									<b>320</b> 
+									выполненых проектов
+								</div>
+								<div class="specialist__pane_infoItem">
+									<i class="icon-prix"></i>
+									<b>8</b> 
+									лет опыта
+								</div>
+							</div>
+							<div class="specialist__pane_text">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+							<div class="specialist__pane_action">
+								<a class="btn btn__lg" data-toggle="modal" data-target="#consultant">
+									<span>Проконсультироваться с дмитрием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="specialist__pane">
+						<div class="specialist__pane_wrap">
+							<div class="specialist__pane_photo">
+								<div class="specialist__pane_circle">
+									<img src="img/specialist.png">
+								</div>
+							</div>
+							<div class="specialist__pane_name">Дмитрий</div>
+							<div class="specialist__pane_prof">проектировщик</div>
+							<div class="specialist__pane_info">
+								<div class="specialist__pane_infoItem">
+									<i class="icon-bug"></i>
+									<b>320</b> 
+									выполненых проектов
+								</div>
+								<div class="specialist__pane_infoItem">
+									<i class="icon-prix"></i>
+									<b>8</b> 
+									лет опыта
+								</div>
+							</div>
+							<div class="specialist__pane_text">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+							<div class="specialist__pane_action">
+								<a class="btn btn__lg" data-toggle="modal" data-target="#consultant">
+									<span>Проконсультироваться с дмитрием</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end Tab panes specialist__panes -->
+				
+			</div>
+		</section>
+		<!-- end specialist -->
+
+		<!-- begin review -->
+		<section id="review" class="review">
+			<div class="container_center">
+				<div class="review__wrap">
+					<div class="review__left">
+						<h2 class="section__title">Согласовываем помещения для продуктовых и не продуктовых магазинов, офисов, ресторанов, банков, стоматологий, медицинских центров</h2>
+						<div class="section__sub">а также любые нежилые помещения под задачи разного профиля</div>
+						<!-- begin grid review__grid -->
+						<ul class="grid grid__4 review__grid">
+							<li class="active">
+								<a href="#rev1" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev1.png">
+								</a>
+							</li>
+							<li>
+								<a href="#rev2" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev2.png">
+								</a>
+							</li>
+							<li>
+								<a href="#rev3" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev3.png">
+								</a>
+							</li>
+							<li>
+								<a href="#rev4" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev4.png">
+								</a>
+							</li>
+							<li>
+								<a href="#rev5" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev5.png">
+								</a>
+							</li>
+							<li>
+								<a href="#rev6" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev6.png">
+								</a>
+							</li>
+							<li>
+								<a href="#rev7" data-toggle="tab" class="review__grid_item">
+									<img src="img/rev7.png">
+								</a>
+							</li>
+						</ul>
+						<!-- end grid review__grid -->
+					</div>
+
+					<div class="review__right">
+						<div id="rev1" class="review__right_pane active">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+						<div id="rev2" class="review__right_pane">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+						<div id="rev3" class="review__right_pane">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+						<div id="rev4" class="review__right_pane">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+						<div id="rev5" class="review__right_pane">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+						<div id="rev6" class="review__right_pane">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+						<div id="rev7" class="review__right_pane">
+							<img src="img/rev-doc.png">
+							<div class="review__action">
+								<a class="btn btn__success" data-fancybox="" href="img/rev-doc-modal.png">Читать отзыв</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<!-- begin video -->
+			<div id="video" class="video">
+				<div class="container_center">
+				
+					<!-- begin grid video__grid -->
+					<div class="grid grid__2 video__grid">
+						<div>
+							<div class="video__grid_item">
+								<div class="video__wrapper youtube" id="TBaFniublgo">
+									<img src="img/video.png" class="video__prev">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="video__grid_item">
+								<div class="video__wrapper youtube" id="vHe-ushlYcI">
+									<img src="img/video.png" class="video__prev">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="video__grid_item">
+								<div class="video__wrapper youtube" id="izhWzT2_Zw8">
+									<img src="img/video.png" class="video__prev">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="video__grid_item">
+								<div class="video__wrapper youtube" id="ednbSRrydkU">
+									<img src="img/video.png" class="video__prev">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end grid video__grid -->
+					
+				</div>
+			</div>
+			<!-- end video -->
+
+		</section>
+		<!-- end review -->
+
+		<!-- begin license -->
+		<section id="license" class="license">
+			<div class="container_center">
+			
+				<div class="license__top">
+					<div class="license__top_text">
+						<b>Конечная цена формируется <br>после составления коммерческого предложения <br>и не изменится в процессе выполнения работ.</b>
+						Это прописано в договоре
+					</div>
+				</div>
+
+				<div class="license__percent">
+					В
+					<b>87</b>
+					<small>%</small>
+				</div>
+
+				<div class="license__sub">
+					случаев цена работ по согласованию нежилых помещений выходит больше запланированной перед началом работы.
+					<b>У нас — не так</b>
+				</div>
+
+				<h2 class="license__title">У нас есть все необходимые лицензии <br>и сертификаты для работы как над небольшими, <br>так и над масштабными проектами</h2>
+
+				<!-- begin grid license__grid -->
+				<div class="grid grid__5 license__grid">
+					<div>
+						<a href="img/license1.png" class="license__grid_item" data-fancybox>
+							<div class="license__grid_img">
+								<img src="img/license1.png">
+							</div>
+							<span href="#" class="license__grid_link">Система менеджмента качества</span>
+						</a>
+					</div>
+					<div>
+						<a href="img/license2.png" class="license__grid_item" data-fancybox>
+							<div class="license__grid_img">
+								<img src="img/license2.png">
+							</div>
+							<span href="#" class="license__grid_link">Система менеджмента безопасности труда и охраны здоровья</span>
+						</a>
+					</div>
+					<div>
+						<a href="img/license3.png" class="license__grid_item" data-fancybox>
+							<div class="license__grid_img">
+								<img src="img/license3.png">
+							</div>
+							<span href="#" class="license__grid_link">Система экологического менеджмента</span>
+						</a>
+					</div>
+					<div>
+						<a href="img/license4.png" class="license__grid_item" data-fancybox>
+							<div class="license__grid_img">
+								<img src="img/license4.png">
+							</div>
+							<span href="#" class="license__grid_link">Справка СОПО</span>
+						</a>
+					</div>
+					<div>
+						<a href="img/license5.png" class="license__grid_item" data-fancybox>
+							<div class="license__grid_img">
+								<img src="img/license5.png">
+							</div>
+							<span href="#" class="license__grid_link">Выписка СРО</span>
+						</a>
+					</div>
+				</div>
+				<!-- end grid license__grid -->
+				
+			</div>
+		</section>
+		<!-- end license -->
+
+		<!-- begin faq -->
+		<section id="faq" class="faq">
+			<div class="container_center">
+			
+				<h2 class="section__title">Мы ответили на вопросы, <br>которые чаще всего задают <br>нам наши клиенты</h2>
+
+				<div class="faq__list">
+					<div class="faq__item">
+						<div class="faq__name">Какие документы необходимы для перепланировки ?</div>
+						<div class="faq__descr">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__name">Какие документы необходимы для перепланировки продуктового магазина ?</div>
+						<div class="faq__descr">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__name">Какие документы необходимы ?</div>
+						<div class="faq__descr">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+					</div>
+					<div class="faq__item">
+						<div class="faq__name">Какие документы необходимы для перепланировки ?</div>
+						<div class="faq__descr">Наш специалист проанализирует объект, подробно рассчитает стоимость работ и подготовит коммерческое предложение со сроками разработки проектной документции и согласования в нужных инстанциях.</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- end faq -->
 		
-			
-			
-		</div>
+		<!-- begin contact -->
+		<section id="contact" class="contact">
+			<!-- begin map -->
+			<div id="map" class="map"></div>
+			<!-- end map -->
+			<div class="contact__box">
+				<h2 class="section__title">Контактная информация</h2>
+				<!-- begin grid contact__grid -->
+				<div class="grid grid__2 contact__grid">
+					<div>
+						<div class="contact__grid_item">
+							<i class="icon-call"></i>
+							<a class="contact__item" href="tel:+7 (495) 333-44-11">+7 (495) 333-44-11</a>
+						</div>
+					</div>
+					<div>
+						<div class="contact__grid_item">
+							<i class="icon-clock"></i>
+							<span class="contact__item">9 00  - 19 00</span>
+						</div>
+					</div>
+					<div>
+						<div class="contact__grid_item">
+							<i class="icon-mail"></i>
+							<a href="mailto:info@site.ru" class="contact__item">info@site.ru</a>
+						</div>
+					</div>
+					<div>
+						<div class="contact__grid_item">
+							<i class="icon-marker"></i>
+							<span class="contact__item"> ул. Лобачевского, дом 92, к.1</span>
+						</div>
+					</div>
+				</div>
+				<!-- end grid contact__grid -->
+			</div>
+		</section>
+		<!-- end contact -->
+
+		<!-- begin quest -->
+		<section id="quest" class="quest">
+			<div class="quest__box">
+				<h2 class="section__title">Остались вопросы?</h2>
+				<div class="section__sub">Наш менеджер ответити проконсультирует по всем вопросам</div>
+				<div class="quest__photo">
+					<div class="quest__circle">
+						<img src="img/quest.png">
+					</div>
+				</div>
+				<div class="quest__name">Анна Ильина</div>
+				<div class="quest__prof">менеджер кол-центра</div>
+				<div class="quest__action">
+					<a class="btn btn__lg" data-toggle="modal" data-target="#manage_rquest"><span>Задать вопрос менеджеру</span></a>
+				</div>
+			</div>
+		</section>
+		<!-- end quest -->
+
 
 	</main>
 	<!-- end main__content -->
@@ -65,19 +1677,258 @@
 <footer class="footer">
 
 	<div class="container_center">
-	
-		<div class="soc">
-			<a href="#"></a>
-			<a href="#"></a>
-			<a href="#"></a>
-		</div>
 		
-		<div class="copy"><a href="#">Site.com</a></div>
+		<div class="footer__left">
+			
+			<a href="#" class="footer__logo">
+				<img src="img/logo-footer.png">
+			</a>
+
+			<div class="footer__logo_sub">
+				ИНН 3214244142 <br>ОГРН 1235235235523
+			</div>
+
+		</div>
+
+		<div class="footer__right">
+			<a href="tel:8 (499) 653-56-71" class="footer__tel">8 (499) 653-56-71</a>
+			<a href="#" class="btn btn__success" data-toggle="modal" data-target="#callback">Перезвонить вам?</a>
+		</div>
+
+		<div class="footer__center">
+			<a href="#" class="footer__privacy" data-toggle="modal" data-target="#policy">Политика конфиденциальности</a>
+			<a href="http://timetofirst.ru" class="footer__time" target="blank">
+				<img class="footer__time_logo" src="img/time-logo.png" alt="">
+				<img class="footer__time_logo-hover" src="img/time-logo-hover.png" alt="">
+			</a>
+		</div>
 
 	</div>
 
 </footer>
 <!-- end footer -->
+
+<!-- begin Modal callback -->
+<div class="modal fade callback" id="callback">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<a href="#" class="modal-close" data-dismiss="modal">
+				<span class="modal-close-hover"></span>
+			</a>
+			<form action="send.php" class="form">
+				<input type="hidden" name="subject" value="форма - перезвоните мне">
+				<div class="form__legend">Заполните форму</div>
+				<div class="form__sub">наш специалист свяжется с вами в течении <br>10 минут для уточнения адреса объекта</div>
+				<div class="form__row">
+					<div class="form__field form__icon">
+						<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+						<i class="icon-phone"></i>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__field form__icon">
+						<input required type="text" name="email" placeholder="Ваш E-mail">
+						<i class="icon-mail"></i>
+					</div>
+				</div>
+				<div class="form__row">
+					<button type="submit" class="btn btn__lg">
+						<span>перезвоните мне</span>
+					</button>
+				</div>
+				<div class="form__row">
+					<input type="checkbox" name="policyConfirm" checked>
+					<label>Я принимаю <b data-dismiss="modal" data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- end Modal callback -->
+
+<!-- begin Modal executive -->
+<div class="modal modal__lg fade executive" id="executive">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<a href="#" class="modal-close" data-dismiss="modal">
+				<span class="modal-close-hover"></span>
+			</a>
+			<form action="send.php" class="form">
+				<div class="executive__right">
+					<input type="hidden" name="subject" value="форма - получить консультацию">
+					<div class="form__legend">Заполните форму</div>
+					<div class="form__sub">и получите консультацию с руководителем <br>компании Replan Estate</div>
+					<div class="form__row">
+						<div class="form__field form__icon">
+							<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+							<i class="icon-phone"></i>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__field form__icon">
+							<input required type="text" name="email" placeholder="Ваш E-mail">
+							<i class="icon-mail"></i>
+						</div>
+					</div>
+					<div class="form__row">
+						<button type="submit" class="btn btn__lg">
+							<span>получить консультацию</span>
+						</button>
+					</div>
+					<div class="form__row">
+						<input type="checkbox" name="policyConfirm" checked>
+						<label>Я принимаю <b data-dismiss="modal" data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+					</div>
+				</div>
+				<div class="executive__left">
+					<img class="executive__photo" src="img/manager.png">
+					<img class="executive__signature" src="img/signature-withe.png">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- end Modal executive -->
+
+<!-- begin Modal consultant -->
+<div class="modal fade consultant" id="consultant">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<a href="#" class="modal-close" data-dismiss="modal">
+				<span class="modal-close-hover"></span>
+			</a>
+			<form action="send.php" class="form">
+				<input type="hidden" name="subject" value="форма - проконсультироваться с дмитрием">
+				<div class="form__legend">Заполните форму</div>
+				<div class="form__sub">и получите консультацию с Дмитрием <br>специалистом в сфере проектирования</div>
+				<div class="form__row">
+					<div class="form__field form__icon">
+						<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+						<i class="icon-phone"></i>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__field form__icon">
+						<input required type="text" name="email" placeholder="Ваш E-mail">
+						<i class="icon-mail"></i>
+					</div>
+				</div>
+				<div class="form__row">
+					<button type="submit" class="btn btn__lg">
+						<span>проконсультироваться с дмитрием</span>
+					</button>
+				</div>
+				<div class="form__row">
+					<input type="checkbox" name="policyConfirm" checked>
+					<label>Я принимаю <b data-dismiss="modal" data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- end Modal consultant -->
+
+<!-- begin Modal manage_rquest -->
+<div class="modal fade manage_rquest" id="manage_rquest">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<a href="#" class="modal-close" data-dismiss="modal">
+				<span class="modal-close-hover"></span>
+			</a>
+			<form action="send.php" class="form">
+				<input type="hidden" name="subject" value="форма - Задать вопрос менеджеру">
+				<div class="form__legend">Заполните форму</div>
+				<div class="form__sub">Наш менеджер ответит и проконсультирует <br>по всем вопросам</div>
+				<div class="form__row">
+					<div class="form__field form__icon">
+						<input required type="tel" name="tel" placeholder="Введите ваш телефон">
+						<i class="icon-phone"></i>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="form__field form__icon">
+						<textarea required name="question" placeholder="Ваш вопрос"></textarea>
+						<i class="icon-quest"></i>
+					</div>
+				</div>
+				<div class="form__row">
+					<button type="submit" class="btn btn__lg">
+						<span>задать вопрос менеджеру</span>
+					</button>
+				</div>
+				<div class="form__row">
+					<input type="checkbox" name="policyConfirm" checked>
+					<label>Я принимаю <b data-dismiss="modal" data-toggle="modal" data-target="#policy">условия передачи информации</b></label>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- end Modal manage_rquest -->
+
+<!-- begin Modal policy -->
+<div class="modal modal__lg fade policy" id="policy">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<a href="#" class="modal-close" data-dismiss="modal">
+				<span class="modal-close-hover"></span>
+			</a>
+			<div class="form">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates reiciendis expedita repellat eligendi. Doloremque iusto cum fugiat laboriosam at facere! A consequatur ex, pariatur, harum velit debitis. Iure dolorum, esse?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic perferendis magni vero quos, velit accusamus earum cumque magnam architecto excepturi ut voluptatibus optio esse ipsum placeat quibusdam voluptates officiis!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end Modal policy -->
+
+
+<!-- begin Modal fansy -->
+<div class="modal modal__lg fade fansy" id="fansy">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<a href="#" class="modal-close" data-dismiss="modal">
+				<span class="modal-close-hover"></span>
+			</a>
+			<div class="form"></div>
+		</div>
+	</div>
+</div>
+<!-- end Modal fansy -->
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.fancybox.min.js"></script> -->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+	<script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+	<script type="text/javascript" src="js/function.js?0.4"></script>
 
 
 </body>

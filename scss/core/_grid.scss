@@ -18,7 +18,7 @@
 	box-sizing: content-box;
 	@include flex();
 	@include flex-flow(row wrap);
-	@extend %clear_all;
+	// @extend %clear_all;
 	&-nowrap {
 		@include flex-flow(row nowrap);
 	}

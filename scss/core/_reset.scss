@@ -112,6 +112,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  transition: all 0.3s;
   &:focus {
     outline: 0;
   }

@@ -137,9 +137,9 @@
 	}
 	@include browser("not-flex") {	
 		display: block;
-		font-size: 0;
+		// font-size: 0;
 		line-height: 0;
-		letter-spacing: -1px;
+		letter-spacing: -0.5em;
 		&>div {
 			// display: -moz-inline-stack!important;
 			display: inline-block;
@@ -259,3 +259,28 @@
 		src: $src;
 	}
 }
+
+// 
+// @TODO: Add docs to retina-image!
+//
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)";
+@mixin retina-image($file, $type) {
+// @mixin retina-image($file, $type, $width, $height) {
+  background-image: url('../img/' + $file + '.' + $type);
+  @media #{$retina} {
+    background-image: url('../img/' + $file + '@2x.' + $type);
+    // @include background-size($width, $height);
+  }
+}
+
+// 
+// @TODO: Add docs to responsive-image!
+//
+$mobile: "(max-width: 767px)";
+@mixin responsive-image($file, $type) {
+  background-image: url('../img/' + $file + '.' + $type);
+  @media #{$mobile} {
+    background-image: url('../img/' + $file + '@0.5x.' + $type);
+  }
+}
+

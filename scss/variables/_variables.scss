@@ -1,17 +1,17 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family:								"Open Sans";
+$main_font_family:								"Proxima Nova";
 $main_color:									#2b3a40;
 $main_line_height:								1.2;
 $main_font_size:								1em;
 
-$container_width:								1450px;
+$container_width:								89.68em;
 
 $footer_height: 								auto;
 
 // Color collection for elements
 $color_primary:									#7b8287;
-$color_success:									#36a566;
+$color_success:									#fccd43;
 $color_info:									#03a9f4;
 $color_warning:									#fca33e;
 $color_danger:									#ff1a1a;
@@ -32,7 +32,7 @@ $el-colors: (
 
 /* Grid */
 /* ======================================================================== */
-$grid_padding:									20px;
+$grid_padding:									1.5em;
 
 
 /* Form */
@@ -42,8 +42,8 @@ $grid_padding:									20px;
 // Input color
 $input_color:									$main_color;
 $input_bg_color:								#fff;
-$input_border_color:							#ddd;
-$input_placeholder_color:						#ddd;
+$input_border_color:							#e6e6e6;
+$input_placeholder_color:						rgba(#666, .75);
 
 // Input hover color
 $input_hover_color:								#fff;
