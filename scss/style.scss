@@ -1014,10 +1014,10 @@
 		margin-right: 4%;
 	}
 	&__prev {
-		margin-left: -5em;
+		margin-left: -3em;
 		>div {
 			margin-bottom: 1.8em;
-			padding-left: 5em;
+			padding-left: 3em;
 		}
 		img {
 			display: block;
@@ -1097,7 +1097,7 @@
 			margin-bottom: 0.6em;
 		}
 		&Item {
-			font-size: 1em;
+			font-size: 1.2em;
 			i {
 				margin-top: 0.3em;
 				font-size: 0.3em;
@@ -1287,19 +1287,19 @@
 		> div {
 			padding-left: 4em;
 			margin-bottom: 1.5em;
-			width: 33%;
+			width: 25%;
 			img {
 				max-height: 9em;
 			}
 			&:nth-child(n+4) {
-				width: 23%;
-				margin-bottom: 2em;
+				// width: 23%;
+				// margin-bottom: 2em;
 				img {
-					max-height: 8em;
+					// max-height: 8em;
 				}
 			}
 			&:nth-child(n+8) {
-				width: 20%;
+				// width: 20%;
 				img {
 					max-height: 7em;
 				}

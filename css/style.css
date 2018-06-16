@@ -2624,10 +2624,10 @@ input[type=checkbox]:disabled:indeterminate:before {
     width: 69.9%;
     margin-right: 4%; }
   .exampleSlider__prev {
-    margin-left: -5em; }
+    margin-left: -3em; }
     .exampleSlider__prev > div {
       margin-bottom: 1.8em;
-      padding-left: 5em; }
+      padding-left: 3em; }
     .exampleSlider__prev img {
       display: block;
       width: 100%; }
@@ -2691,7 +2691,7 @@ input[type=checkbox]:disabled:indeterminate:before {
   .exampleSlider .example__grid > div {
     margin-bottom: 0.6em; }
   .exampleSlider .example__gridItem {
-    font-size: 1em; }
+    font-size: 1.2em; }
     .exampleSlider .example__gridItem i {
       margin-top: 0.3em;
       font-size: 0.3em; }
@@ -2833,18 +2833,11 @@ input[type=checkbox]:disabled:indeterminate:before {
     .help__grid > div {
       padding-left: 4em;
       margin-bottom: 1.5em;
-      width: 33%; }
+      width: 25%; }
       .help__grid > div img {
         max-height: 9em; }
-      .help__grid > div:nth-child(n+4) {
-        width: 23%;
-        margin-bottom: 2em; }
-        .help__grid > div:nth-child(n+4) img {
-          max-height: 8em; }
-      .help__grid > div:nth-child(n+8) {
-        width: 20%; }
-        .help__grid > div:nth-child(n+8) img {
-          max-height: 7em; }
+      .help__grid > div:nth-child(n+8) img {
+        max-height: 7em; }
     .help__grid:after {
       content: '';
       width: 100%;
