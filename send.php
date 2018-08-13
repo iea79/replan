@@ -22,7 +22,7 @@ if ((isset($_POST['tel']) && $_POST['tel'] != "")) { //Проверка отпр
 	                        <title>' . $_POST['subject'] . '</title>
 	                    </head>
 	                    <body>
-	                        <p>Имя: ' . $_POST['email'] . '</p>
+	                        <p>E-mail: ' . $_POST['name'] . '</p>
 	                        <p>Телефон: ' . $_POST['tel'] . '</p>                        
 	                    </body>
 	                </html>'; 

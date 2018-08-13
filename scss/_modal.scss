@@ -122,6 +122,11 @@
             opacity: .5;
             filter: alpha(opacity=50);
         }
+        &.dark {
+            opacity: 0.9;
+            filter: alpha(opacity=0);
+            background-image: linear-gradient(to top, #273338 0%, #273338 56%, #45626e 100%);
+        }
     }
 
     &-header {

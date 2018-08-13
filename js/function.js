@@ -83,7 +83,13 @@ $(document).ready(function() {
     $('.exampleSlider').slick({
         dots: true,
         nextArrow: '<div class="exampleSlider-next"><div class="exampleSlider-icon"></div></div>',
-        prevArrow: '<div class="exampleSlider-prev"><div class="exampleSlider-icon"></div></div>'
+        prevArrow: '<div class="exampleSlider-prev"><div class="exampleSlider-icon"></div></div>',
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                adaptiveHeight: true
+            }
+        }]
     });
 
     $('.faq__item').on('click', function(event) {
@@ -106,12 +112,35 @@ $(document).ready(function() {
     // $('[type=tel]').inputmask({ showMaskOnHover: false, alias: "tel" });
     $('[type=tel]').inputmask("+9(999)999 99 99",{ showMaskOnHover: false });
 
-    $('[data-fancybox]').on('click', function(event) {
+    $('[data-img-modal]').on('click', function(event) {
         event.preventDefault();
         var img = $(this).attr('href');
 
         $('#fansy .form').html('<img src="'+img+'" alt="" />');
         $('#fansy').modal('show');
+    });
+
+    $('[data-img-slider]').on('click', function(event) {
+        event.preventDefault();
+        var sliderId = $(this).attr('href');
+        var slider = $(sliderId).clone();
+
+        $('#projectModal .projectModal__content').html($(slider));
+        $('#projectModal').modal('show');
+
+        $('#projectModal .sliderDocs').slick({
+            adaptiveHeight: true,
+            // vertical: true
+        });
+        $('#projectModal .sliderDocs').slick("setPosition", 0);
+
+    });
+
+    $('#projectModal').on('hide.bs.modal', function() {
+        $('#projectModal .sliderDocs').remove();        
+    });
+    $('#projectModal').on('shown.bs.modal', function() {
+        $('.modal-backdrop').addClass('dark');        
     });
 
     formSubmit();
@@ -133,7 +162,7 @@ $(document).ready(function() {
         }]
     });
     $('.specialist__tabs').slick({
-        slidesToShow: 5,
+        slidesToShow: 8,
         slidesToScroll: 1,
         asNavFor: '.specialist__panes',
         arrows: false,
@@ -142,6 +171,7 @@ $(document).ready(function() {
         vertical: true,
         infinite: false,
         focusOnSelect: true,
+        adaptiveHeight: false,
         responsive: [{
             breakpoint: 768,
             settings: {
@@ -153,7 +183,16 @@ $(document).ready(function() {
         }]
     });
 
+    $('.specialist__pane_action .btn').on('click', function() {
+        var form = $('#consultant .form');
+        var specName = $(this).text();
+        form.find('input[name=subject]').val('Форма - '+specName);
+        form.find('button[type=submit] span').html(specName);
+
+    });
+
 });
+
 
 function formSubmit() {
     $("[type=submit]").on('click', function (e){ 
@@ -190,14 +229,14 @@ function formSubmit() {
                 success: function (response) {
                     // $('#success').modal('show');
                     // console.log('success');
-                    // console.log(response);
+                    console.log(response);
                     // console.log(data);
                     document.location.href = "success.html";
                 },
                 error: function (response) {
                     // $('#success').modal('show');
                     // console.log('error');
-                    // console.log(response);
+                    console.log(response);
                 }
             });
         }
@@ -248,6 +287,22 @@ function fontResize() {
     }
 	$('body').css('fontSize', fontSize + '%');
 }
+
+// Хак для яндекс карт втавленных через iframe
+// Страуктура:
+//<div class="map__wrap" id="map-wrap">
+//  <iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/-/CBqXzGXSOB" width="1083" height="707" frameborder="0" allowfullscreen="true"></iframe>
+//</div>
+// Обязательное свойство в style которое и переключет скрипт
+document.addEventListener('click', function(e) {
+    var map = document.querySelector('#map-wrap iframe')
+    if(e.target.id === 'map-wrap') {
+        map.style.pointerEvents = 'all'
+    } else {
+        map.style.pointerEvents = 'none'
+    }
+})
+
 
 // Видео для страницы how it works
 $(function () {

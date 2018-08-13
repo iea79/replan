@@ -1,5 +1,6 @@
 $icomoon-font-path: "../fonts/replan" !default;
 
+$icon-user: \e916;
 $icon-fire: \e914;
 $icon-plus: \e915;
 $icon-angel-right: \e903;
@@ -161,6 +162,11 @@ $icon-zoom: \e913;
 .icon-zoom {
   &:before {
     content: unicode($icon-zoom); 
+  }
+}
+.icon-user {
+  &:before {
+    content: unicode($icon-user); 
   }
 }
 
