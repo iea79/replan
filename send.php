@@ -1,6 +1,6 @@
 <?php
 if ((isset($_POST['tel']) && $_POST['tel'] != "")) { //Проверка отправилось ли наше поля name и не пустые ли они
-    $to = 'busforward@gmail.com, vorobyev_sasha@icloud.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+    $to = 'sale@replanmsk.ru, vorobyev_sasha@icloud.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
     $subject = ''.$_POST['subject'].'';
     if ((isset($_POST['question']) && $_POST['question'] != "")) {
 
